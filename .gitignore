@@ -1,0 +1,19 @@
+bin/
+obj/
+# globs
+Makefile.in
+*.userprefs
+*.usertasks
+*.suo
+*.user
+config.make
+config.status
+aclocal.m4
+install-sh
+autom4te.cache/
+*.tar.gz
+tarballs/
+test-results/
+.DS_Store
+.vs/
+.env
