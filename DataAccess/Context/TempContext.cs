@@ -9,9 +9,9 @@ using System.Threading.Tasks;
 
 namespace DataAccess.Context
 {
-    public class SoftServeSupportContext : DbContext
+    public class TempContext : DbContext
     {
-        public SoftServeSupportContext(DbContextOptions<SoftServeSupportContext> options) : base(options)
+        public TempContext(DbContextOptions<TempContext> options) : base(options)
         {
         }
 

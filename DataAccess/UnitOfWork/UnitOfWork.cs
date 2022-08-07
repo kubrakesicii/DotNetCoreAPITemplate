@@ -12,11 +12,11 @@ namespace DataAccess.UnitOfWork
 {
     public class UnitOfWork : IUnitOfWork
     {
-        private readonly SoftServeSupportContext _context;
+        private readonly TempContext _context;
 
         private readonly IUserRepository _userRepository;
 
-        public UnitOfWork(SoftServeSupportContext context)
+        public UnitOfWork(TempContext context)
         {
             if (context == null)
                 throw new ArgumentNullException("dbContext can not be null.");

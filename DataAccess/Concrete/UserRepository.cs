@@ -10,7 +10,7 @@ namespace DataAccess.Concrete
 {
     public class UserRepository : GenericRepository<User>, IUserRepository
     {
-        public UserRepository(SoftServeSupportContext context) : base(context)
+        public UserRepository(TempContext context) : base(context)
         {
         }
 

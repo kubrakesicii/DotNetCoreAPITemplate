@@ -8,7 +8,7 @@ namespace API.Extension
         public static IServiceCollection InstallDatabase(this IServiceCollection services, IConfiguration configuration)
         {
             var connectionString = configuration.GetConnectionString("MysqlConnection");
-            services.AddDbContext<SoftServeSupportContext>(options =>
+            services.AddDbContext<TempContext>(options =>
                 options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
             return services;
         }

@@ -16,11 +16,11 @@ namespace DataAccess.GenericRepository
         // Burada verilen TEntity türü ile bir DBSet oluşturulur -> İlgili tabloya erişim sağlanır
         // DBContext objesi oluşturulur -> DB'ye erişim sağlanır
         private DbSet<T> _entity;
-        public SoftServeSupportContext _context;
+        public TempContext _context;
 
         public virtual DbSet<T> Entity => _entity ?? _context.Set<T>();
 
-        public GenericRepository(SoftServeSupportContext context)
+        public GenericRepository(TempContext context)
         {
             _context = context;
         }
